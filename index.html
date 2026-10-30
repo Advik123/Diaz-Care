@@ -4,63 +4,89 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Diaz Care is a family-owned landscaping company in Mundelein, IL. Professional lawn maintenance, landscaping, garden design, and storm cleanup. Call (847) 757-4157 for a free quote.">
+  <meta name="theme-color" content="#14301f">
   <title>Diaz Care | Lawn Maintenance & Landscaping in Mundelein, IL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="skip-link">Skip to content</a>
 
-  <header class="site-header">
+  <header class="site-header" id="site-header">
     <div class="container nav-inner">
-      <a href="#top" class="logo">Diaz Care</a>
+      <a href="#top" class="logo">
+        <svg class="logo-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15Z" fill="currentColor"/><path d="M16 12v17" stroke="#14301f" stroke-width="2" stroke-linecap="round"/></svg>
+        Diaz Care
+      </a>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
-      <nav id="nav-menu" class="nav-menu">
+      <nav id="nav-menu" class="nav-menu" aria-label="Main">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#hours">Hours</a>
-        <a href="#quote">Free Quote</a>
         <a href="#contact">Contact</a>
+        <a href="#quote" class="nav-cta">Free Quote</a>
       </nav>
     </div>
   </header>
 
-  <main id="top">
-    <section class="hero">
+  <main id="main">
+    <section class="hero" id="top">
       <div class="container hero-content">
         <p class="eyebrow">Mundelein, IL &middot; Family Owned</p>
-        <h1>Professional Lawn Care &amp; Landscaping</h1>
-        <p class="hero-text">From mowing to garden design, we provide everything you need to make your outdoor space stunning and inviting.</p>
+        <h1>Yards that look cared for, <em>because they are.</em></h1>
+        <p class="hero-text">From weekly mowing to full garden design, we treat every yard like our own.</p>
         <div class="hero-actions">
           <a href="#quote" class="btn btn-primary">Get a Free Quote</a>
-          <a href="tel:+18477574157" class="btn btn-outline">Call (847) 757-4157</a>
+          <a href="tel:+18477574157" class="btn btn-outline">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.250.2 2.450.6 3.600a1 1 0 0 1-.25 1Z" fill="currentColor"/></svg>
+            (847) 757-4157
+          </a>
         </div>
         <p class="status" id="open-status" aria-live="polite"></p>
       </div>
+      <svg class="hero-hills" viewBox="0 0 1440 160" preserveAspectRatio="none" aria-hidden="true">
+        <path class="hill-back" d="M0 90C200 20 400 30 620 80S1100 140 1440 50V160H0Z"/>
+        <path class="hill-front" d="M0 120C260 70 520 70 760 110S1200 150 1440 100V160H0Z"/>
+      </svg>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-sub">Reliable, professional outdoor care for homes across Mundelein.</p>
+        <header class="section-head">
+          <p class="kicker">What we do</p>
+          <h2 class="section-title">Our Services</h2>
+          <p class="section-sub">Reliable, professional outdoor care for homes across Mundelein.</p>
+        </header>
         <div class="services-grid">
           <article class="card">
-            <div class="card-icon" aria-hidden="true">&#9752;</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M3 20h18M5 20c0-5 1-9 3-12M10 20c0-6 1-11 3-15M15 20c0-4 1-7 3-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
             <h3>Lawn Maintenance</h3>
             <p>Regular mowing and upkeep to keep your lawn healthy, neat, and looking its best all season.</p>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">&#127795;</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 3 6 11h3l-4 6h14l-4-6h3Z M12 17v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            </div>
             <h3>Landscaping</h3>
             <p>Professional landscaping services that enhance the look and function of your outdoor space.</p>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">&#127803;</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="9" r="3" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 6V3M12 15v-1M9 9H6M18 9h-3M12 15c0 3-1 5-1 6M12 18c2 0 4-1 5-3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
             <h3>Garden Design</h3>
             <p>Thoughtful garden design that makes your yard stunning, inviting, and easy to enjoy.</p>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">&#127786;</div>
+            <div class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 15a4 4 0 0 1 .5-8 5.500 5.500 0 0 1 10.500 1.500A3.500 3.500 0 0 1 17.500 15H7ZM10 18l-1 3M14 18l-1 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
             <h3>Storm Cleanup</h3>
             <p>Fallen branch and storm debris removal to get your property safe and clear again.</p>
           </article>
@@ -68,88 +94,116 @@
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
+    <section class="steps-band" aria-labelledby="steps-title">
+      <div class="container">
+        <h2 id="steps-title" class="steps-title">Simple from start to finish</h2>
+        <ol class="steps">
+          <li><span class="step-num">1</span><div><h3>Tell us about your yard</h3><p>Send a quick request or give us a call.</p></div></li>
+          <li><span class="step-num">2</span><div><h3>Get your free quote</h3><p>We get back to you with a clear plan.</p></div></li>
+          <li><span class="step-num">3</span><div><h3>Enjoy your outdoor space</h3><p>We handle the work, you enjoy the result.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="about" class="section">
       <div class="container about-grid">
         <div>
-          <h2 class="section-title">About Diaz Care</h2>
+          <p class="kicker">Our story</p>
+          <h2 class="section-title left">About Diaz Care</h2>
           <p>Diaz Care is a Mundelein based, family owned company. We take pride in treating every yard like our own and in building lasting relationships with the neighbors we serve.</p>
           <p>Whether you need routine lawn maintenance or a full landscaping project, we are here to help you enjoy your outdoor space.</p>
           <p class="neighbor-note">Loved by neighbors: <a href="https://nextdoor.com/pages/diaz-care-the-villages-fl/" target="_blank" rel="noopener">26 Faves on Nextdoor</a></p>
         </div>
         <div class="about-badge" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M16 3c6 5 9 10 9 15a9 9 0 0 1-18 0c0-5 3-10 9-15Z" fill="currentColor"/><path d="M16 12v17" stroke="#14301f" stroke-width="2" stroke-linecap="round"/></svg>
           <span class="badge-big">Family</span>
           <span class="badge-small">Owned &amp; Operated</span>
         </div>
       </div>
     </section>
 
-    <section id="hours" class="section">
+    <section id="hours" class="section section-alt">
       <div class="container">
-        <h2 class="section-title">Hours</h2>
+        <header class="section-head">
+          <p class="kicker">When to reach us</p>
+          <h2 class="section-title">Hours</h2>
+        </header>
         <table class="hours-table">
+          <caption class="visually-hidden">Business hours</caption>
           <tbody>
-            <tr><th scope="row">Monday &ndash; Friday</th><td>6:30 AM &ndash; 9:00 PM</td></tr>
-            <tr><th scope="row">Saturday</th><td>6:30 AM &ndash; 7:30 PM</td></tr>
-            <tr><th scope="row">Sunday</th><td>Closed</td></tr>
+            <tr data-days="1,2,3,4,5"><th scope="row">Monday &ndash; Friday</th><td>6:30 AM &ndash; 9:00 PM</td></tr>
+            <tr data-days="6"><th scope="row">Saturday</th><td>6:30 AM &ndash; 7:30 PM</td></tr>
+            <tr data-days="0"><th scope="row">Sunday</th><td>Closed</td></tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <section id="quote" class="section section-alt">
+    <section id="quote" class="section">
       <div class="container narrow">
-        <h2 class="section-title">Get a Free Quote</h2>
-        <p class="section-sub">Tell us about your property and we will get back to you.</p>
+        <header class="section-head">
+          <p class="kicker">No obligation</p>
+          <h2 class="section-title">Get a Free Quote</h2>
+          <p class="section-sub">Tell us about your property and we will get back to you.</p>
+        </header>
         <form id="quote-form" class="quote-form" novalidate>
-          <div class="form-row">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
-          </div>
-          <div class="form-row">
-            <label for="phone">Phone</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" required>
-          </div>
-          <div class="form-row">
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" autocomplete="email">
-          </div>
-          <div class="form-row">
-            <label for="service">Service</label>
-            <select id="service" name="service">
-              <option value="Lawn Maintenance">Lawn Maintenance</option>
-              <option value="Landscaping">Landscaping</option>
-              <option value="Garden Design">Garden Design</option>
-              <option value="Storm Cleanup">Storm Cleanup</option>
-              <option value="Other">Other</option>
-            </select>
+          <div class="form-grid">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-row">
+              <label for="phone">Phone</label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email <span class="optional">(optional)</span></label>
+              <input id="email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="form-row">
+              <label for="service">Service</label>
+              <select id="service" name="service">
+                <option value="Lawn Maintenance">Lawn Maintenance</option>
+                <option value="Landscaping">Landscaping</option>
+                <option value="Garden Design">Garden Design</option>
+                <option value="Storm Cleanup">Storm Cleanup</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
           </div>
           <div class="form-row">
             <label for="message">Project details</label>
             <textarea id="message" name="message" rows="4"></textarea>
           </div>
           <p class="form-error" id="form-error" role="alert"></p>
+          <p class="form-success" id="form-success" role="status"></p>
           <button type="submit" class="btn btn-primary btn-block">Send Request</button>
         </form>
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container contact-grid">
-        <div class="contact-item">
-          <h3>Call Us</h3>
-          <a href="tel:+18477574157">(847) 757-4157</a>
-        </div>
-        <div class="contact-item">
-          <h3>Email</h3>
-          <a href="mailto:diazcarehelp@gmail.com">diazcarehelp@gmail.com</a>
-        </div>
-        <div class="contact-item">
-          <h3>Location</h3>
-          <p>Diamond Lake Road<br>Mundelein, IL 60060</p>
-        </div>
-        <div class="contact-item">
-          <h3>Follow Us</h3>
-          <a href="https://www.instagram.com/diazcarelandscaping/" target="_blank" rel="noopener">@diazcarelandscaping</a>
+    <section id="contact" class="section section-dark">
+      <div class="container">
+        <header class="section-head">
+          <h2 class="section-title">Get in touch</h2>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-item">
+            <h3>Call Us</h3>
+            <a href="tel:+18477574157">(847) 757-4157</a>
+          </div>
+          <div class="contact-item">
+            <h3>Email</h3>
+            <a href="mailto:diazcarehelp@gmail.com">diazcarehelp@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <h3>Location</h3>
+            <p>Diamond Lake Road<br>Mundelein, IL 60060</p>
+          </div>
+          <div class="contact-item">
+            <h3>Follow Us</h3>
+            <a href="https://www.instagram.com/diazcarelandscaping/" target="_blank" rel="noopener">@diazcarelandscaping</a>
+          </div>
         </div>
       </div>
     </section>
@@ -160,6 +214,11 @@
       <p>&copy; <span id="year"></span> Diaz Care. Mundelein, IL.</p>
     </div>
   </footer>
+
+  <a href="tel:+18477574157" class="mobile-call" aria-label="Call Diaz Care at (847) 757-4157">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11 11 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.250.2 2.450.6 3.600a1 1 0 0 1-.25 1Z" fill="currentColor"/></svg>
+    Call now
+  </a>
 
   <script src="script.js"></script>
 </body>

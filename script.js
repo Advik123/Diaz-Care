@@ -64,7 +64,20 @@
     statusEl.textContent = isOpen ? "We are open now. Call us!" : "Currently closed. Leave a message or request a quote.";
     statusEl.classList.toggle("is-open", isOpen);
     statusEl.classList.toggle("is-closed", !isOpen);
+
+    document.querySelectorAll(".hours-table tr[data-days]").forEach(function (row) {
+      var days = row.getAttribute("data-days").split(",").map(Number);
+      row.classList.toggle("today", days.indexOf(weekday) !== -1);
+    });
   }
+
+  // Header shadow once the page scrolls
+  var header = document.getElementById("site-header");
+  function onScroll() {
+    if (header) header.classList.toggle("scrolled", window.scrollY > 8);
+  }
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
 
   updateStatus();
   setInterval(updateStatus, 60 * 1000);
@@ -77,6 +90,8 @@
     form.addEventListener("submit", function (event) {
       event.preventDefault();
       errorEl.textContent = "";
+      var prevSuccess = document.getElementById("form-success");
+      if (prevSuccess) prevSuccess.textContent = "";
 
       var fields = {
         name: form.elements.name,
@@ -134,6 +149,10 @@
         "?subject=" + encodeURIComponent(subject) +
         "&body=" + encodeURIComponent(body);
 
+      var successEl = document.getElementById("form-success");
+      if (successEl) {
+        successEl.textContent = "Thanks! Your email app should open with your request ready to send. You can also call (847) 757-4157.";
+      }
       form.reset();
     });
   }
